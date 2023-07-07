@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background: linear-gradient(45deg, #000, #fff, rgb(68, 59, 112));
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.main-title{
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    border: 2px solid black;
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    width: 600px;
+    border-radius: 20px;
+    background-color: rgb(68, 59, 112);
+}
+
+.input-content{
+   height: 50px;
+   width: 68%;
+   font-size: 1.2rem;
+   padding-left: .5rem;
+   font-family: 'Roboto', sans-serif;
+}
+.input-content:focus{
+    outline: none;
+}
+#input-btn, #close-btn{
+    height: 50px;
+    width: 15%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: rgb(56, 52, 72);
+    background-color: #fff;
+}
+
+#input-btn:hover, #close-btn:hover{
+    background-color: rgb(197, 191, 215);
+}
+
+.check-list{
+    width: 1.3rem;
+    height: 1.3rem;
+    accent-color: rgb(68, 59, 112);
+}
+#content-p{
+    text-align: left;
+    align-items: center;
+    display: flex;
+}
+
+.main-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-xmark{
+    font-size: 1.3rem;
+    margin: auto 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
