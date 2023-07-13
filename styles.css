@@ -30,7 +30,7 @@ body{
     padding: 3rem 2rem;
     width: 35rem;
     border-radius: 20px;
-    background-color: #3aaae6;
+    background: linear-gradient(-46deg, #ededed,#3aaae6, #404040);
     box-shadow: 1px 5px 10px #000;
 
 }
