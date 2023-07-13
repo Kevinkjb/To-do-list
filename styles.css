@@ -6,39 +6,51 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(45deg, #000, #fff, rgb(68, 59, 112));
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 .main-title{
+    text-align: center;
     margin-bottom: 2rem;
     color: #fff;
 }
 
 .container{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url('./note.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main{
-    border: 2px solid black;
     margin-top: 5rem;
     padding: 3rem 2rem;
-    width: 600px;
+    width: 35rem;
     border-radius: 20px;
-    background-color: rgb(68, 59, 112);
+    background-color: #3aaae6;
+    box-shadow: 1px 3px 3px 2px #000;
+
 }
 
 .input-content{
    height: 50px;
    width: 68%;
    font-size: 1.2rem;
-   padding-left: .5rem;
+   padding-left: .7rem;
    font-family: 'Roboto', sans-serif;
+   border-radius: 5px;
+   border: none;
+   font-weight: 600;
+   color: #6b6c6d;
 }
 .input-content:focus{
     outline: none;
 }
+
 #input-btn, #close-btn{
     height: 50px;
     width: 15%;
@@ -46,12 +58,23 @@ body{
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    color: rgb(56, 52, 72);
+    color: rgb(81, 81, 81);
     background-color: #fff;
+    cursor: pointer;
 }
-
+.delete-todo-button{
+    height: 2rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ed3d3d;
+    cursor: pointer;
+}
 #input-btn:hover, #close-btn:hover{
-    background-color: rgb(197, 191, 215);
+    background-color: rgb(227, 227, 227);
 }
 
 .check-list{
@@ -77,10 +100,16 @@ body{
     font-size: 1.5rem;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
+    color: #6b6c6d;
 }
 .fa-xmark{
     font-size: 1.3rem;
     margin: auto 0;
     padding-right: 10px;
     cursor: pointer;
+}
+#ul-list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }

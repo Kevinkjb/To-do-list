@@ -9,16 +9,12 @@ const classListItem = 'close-item'
 
 if(saveItem){
     listContainer = saveItem
-    render(listContainer)
+    render()
 }
 
 inputBtn.addEventListener("click", function(){
+    todoList()
 
-    listContainer.push(inputList.value)
-    localStorage.setItem("listContainer", JSON.stringify(listContainer))
-    inputList.value = ""
-    render(listContainer)
-    console.log(listContainer)
 
 })
 
@@ -28,15 +24,26 @@ closeBtn.addEventListener("click", function(){
     render(listContainer)
 })
 
-function render(list){
+function todoList(){
+    listContainer.push(inputList.value)
+    localStorage.setItem("listContainer", JSON.stringify(listContainer))
+    inputList.value = ""
+    render()
+}
+
+function render(){
         listItem = ""
 
         for(let i = 0; i<listContainer.length; i++){
+            const todoObject = listContainer[i];
             listItem += 
             `
                 <li class="main-display">
-                    ${list[i]}
-                    <input type="checkbox" class="check-list">
+                    ${todoObject}
+                    <button onclick="
+                    listContainer.splice(${i}, 1);
+                    render();
+                    "class="delete-todo-button">X</button> 
                 </li>
             `
 
